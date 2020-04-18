@@ -323,7 +323,6 @@
 				2B88F039244083D900452A83 /* BackgroundView.swift */,
 				2B88F038244083D900452A83 /* MainSoundCardView.swift */,
 				2B88F036244083D900452A83 /* SubSoundCardView.swift */,
-				2B88F03A244083D900452A83 /* GridView.swift */,
 				2B88F03E244083DA00452A83 /* PlayListView.swift */,
 				2B88F03B244083D900452A83 /* SoundLibraryView.swift */,
 				2B3D227A2445EC0700C6C31A /* VisualEffectView.swift */,
@@ -362,6 +361,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		2BC4FECA244B8B370091D65C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B88F03A244083D900452A83 /* GridView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2BD5B4B5244B71650085221E /* CyberSpaceForMac */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,6 +394,7 @@
 		2BD5B4C7244B71C60085221E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2BC4FECA244B8B370091D65C /* View */,
 				2BE3771A242B06320012F285 /* Resources */,
 				2BB336152449B080005B5300 /* Extensions */,
 			);
