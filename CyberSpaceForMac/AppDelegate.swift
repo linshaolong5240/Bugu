@@ -27,7 +27,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         let userData =  UserData()
-        print(userData.subSounds)
         let player = Player()
         
         //        updateJSON()
