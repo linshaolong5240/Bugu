@@ -7,6 +7,92 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0F01C8244B910900239832 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99116B242C6069007E7FEA /* UserData.swift */; };
+		2B0F01C9244B923300239832 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99116B242C6069007E7FEA /* UserData.swift */; };
+		2B0F01CB244B925000239832 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE377BC242B06CC0012F285 /* Data.swift */; };
+		2B0F01CC244B925500239832 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B88F03A244083D900452A83 /* GridView.swift */; };
+		2B0F021D244B991100239832 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 2B88F03224407BE300452A83 /* Sounds */; };
+		2B0F021E244B991100239832 /* soundIndexes.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37722242B06320012F285 /* soundIndexes.json */; };
+		2B0F021F244B991100239832 /* 游泳池.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3771B242B06320012F285 /* 游泳池.m4a */; };
+		2B0F0220244B991100239832 /* 小溪.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3771C242B06320012F285 /* 小溪.m4a */; };
+		2B0F0221244B991100239832 /* 雾林柔雨.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3771D242B06320012F285 /* 雾林柔雨.m4a */; };
+		2B0F0222244B991100239832 /* 小鸭戏水.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3771E242B06320012F285 /* 小鸭戏水.m4a */; };
+		2B0F0223244B991100239832 /* 鸬鹚.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3771F242B06320012F285 /* 鸬鹚.m4a */; };
+		2B0F0224244B991100239832 /* 溪流雪融.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37720242B06320012F285 /* 溪流雪融.m4a */; };
+		2B0F0225244B991100239832 /* 春雷.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37721242B06320012F285 /* 春雷.m4a */; };
+		2B0F0226244B991100239832 /* 割草机.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37723242B06320012F285 /* 割草机.m4a */; };
+		2B0F0227244B991100239832 /* 船舱.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37724242B06320012F285 /* 船舱.m4a */; };
+		2B0F0228244B991100239832 /* 踏雪.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37725242B06320012F285 /* 踏雪.m4a */; };
+		2B0F0229244B991100239832 /* 孤岛.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37726242B06320012F285 /* 孤岛.m4a */; };
+		2B0F022A244B991100239832 /* 纽约地铁口.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37727242B06320012F285 /* 纽约地铁口.m4a */; };
+		2B0F022B244B991100239832 /* 老电视.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37728242B06320012F285 /* 老电视.m4a */; };
+		2B0F022C244B991100239832 /* 荒野.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37729242B06320012F285 /* 荒野.m4a */; };
+		2B0F022D244B991100239832 /* 秋日孤鸟.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3772A242B06320012F285 /* 秋日孤鸟.m4a */; };
+		2B0F022E244B991100239832 /* 沐浴.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3772B242B06320012F285 /* 沐浴.m4a */; };
+		2B0F022F244B991100239832 /* 夏夜.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3772C242B06320012F285 /* 夏夜.m4a */; };
+		2B0F0230244B991100239832 /* 雪林.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3772D242B06320012F285 /* 雪林.m4a */; };
+		2B0F0231244B991100239832 /* 壁炉.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3772E242B06320012F285 /* 壁炉.m4a */; };
+		2B0F0232244B991100239832 /* 高跟鞋.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3772F242B06320012F285 /* 高跟鞋.m4a */; };
+		2B0F0233244B991100239832 /* 折纸.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37730242B06320012F285 /* 折纸.m4a */; };
+		2B0F0234244B991100239832 /* 雨伞.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37731242B06320012F285 /* 雨伞.m4a */; };
+		2B0F0235244B991100239832 /* 海与鸟.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37732242B06320012F285 /* 海与鸟.m4a */; };
+		2B0F0236244B991100239832 /* 冬雪压枝.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37733242B06320012F285 /* 冬雪压枝.m4a */; };
+		2B0F0237244B991100239832 /* 仙女棒.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37734242B06320012F285 /* 仙女棒.m4a */; };
+		2B0F0238244B991100239832 /* 帐篷雨.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37735242B06320012F285 /* 帐篷雨.m4a */; };
+		2B0F0239244B991100239832 /* 后院虫鸣.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37736242B06320012F285 /* 后院虫鸣.m4a */; };
+		2B0F023A244B991100239832 /* 翻书.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37737242B06320012F285 /* 翻书.m4a */; };
+		2B0F023B244B991100239832 /* 雨滴洒落.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37738242B06320012F285 /* 雨滴洒落.m4a */; };
+		2B0F023C244B991100239832 /* 河流.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37739242B06320012F285 /* 河流.m4a */; };
+		2B0F023D244B991100239832 /* 波音客机.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3773A242B06320012F285 /* 波音客机.m4a */; };
+		2B0F023E244B991100239832 /* 图书馆.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3773B242B06320012F285 /* 图书馆.m4a */; };
+		2B0F023F244B991100239832 /* 野炊.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3773C242B06320012F285 /* 野炊.m4a */; };
+		2B0F0240244B991200239832 /* 风铃.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3773D242B06320012F285 /* 风铃.m4a */; };
+		2B0F0241244B991200239832 /* 老钟.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3773E242B06320012F285 /* 老钟.m4a */; };
+		2B0F0242244B991200239832 /* 林风.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3773F242B06320012F285 /* 林风.m4a */; };
+		2B0F0243244B991200239832 /* 雨后.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37740242B06320012F285 /* 雨后.m4a */; };
+		2B0F0244244B991200239832 /* 雷暴雨.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37741242B06320012F285 /* 雷暴雨.m4a */; };
+		2B0F0245244B991200239832 /* 刨木.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37742242B06320012F285 /* 刨木.m4a */; };
+		2B0F0246244B991200239832 /* 碎石路.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37743242B06320012F285 /* 碎石路.m4a */; };
+		2B0F0247244B991200239832 /* 水边自然.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37744242B06320012F285 /* 水边自然.m4a */; };
+		2B0F0248244B991200239832 /* 慢敲打字机.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37745242B06320012F285 /* 慢敲打字机.m4a */; };
+		2B0F0249244B991200239832 /* 柴火.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37746242B06320012F285 /* 柴火.m4a */; };
+		2B0F024A244B991200239832 /* 水落屋檐.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37747242B06320012F285 /* 水落屋檐.m4a */; };
+		2B0F024B244B991200239832 /* 雨村清晨.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37748242B06320012F285 /* 雨村清晨.m4a */; };
+		2B0F024C244B991200239832 /* 冰雹雨.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37749242B06320012F285 /* 冰雹雨.m4a */; };
+		2B0F024D244B991200239832 /* 雨林.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3774A242B06320012F285 /* 雨林.m4a */; };
+		2B0F024E244B991200239832 /* 咖啡馆.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3774B242B06320012F285 /* 咖啡馆.m4a */; };
+		2B0F024F244B991200239832 /* 风之原野.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3774C242B06320012F285 /* 风之原野.m4a */; };
+		2B0F0250244B991200239832 /* 打字机.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3774D242B06320012F285 /* 打字机.m4a */; };
+		2B0F0251244B991200239832 /* 水滴空灵.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3774E242B06320012F285 /* 水滴空灵.m4a */; };
+		2B0F0252244B991200239832 /* 瀑布.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3774F242B06320012F285 /* 瀑布.m4a */; };
+		2B0F0253244B991200239832 /* 落尘唱片.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37750242B06320012F285 /* 落尘唱片.m4a */; };
+		2B0F0254244B991200239832 /* 篮球场.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37751242B06320012F285 /* 篮球场.m4a */; };
+		2B0F0255244B991200239832 /* 厨房.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37752242B06320012F285 /* 厨房.m4a */; };
+		2B0F0256244B991200239832 /* 薄片.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37753242B06320012F285 /* 薄片.m4a */; };
+		2B0F0257244B991200239832 /* 屋顶风雨.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37754242B06320012F285 /* 屋顶风雨.m4a */; };
+		2B0F0258244B991200239832 /* 木风铃.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37755242B06320012F285 /* 木风铃.m4a */; };
+		2B0F0259244B991200239832 /* 粉噪.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37756242B06320012F285 /* 粉噪.m4a */; };
+		2B0F025A244B991200239832 /* 游乐场.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37757242B06320012F285 /* 游乐场.m4a */; };
+		2B0F025B244B991200239832 /* 落雨潜海.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37758242B06320012F285 /* 落雨潜海.m4a */; };
+		2B0F025C244B991200239832 /* 冰裂.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37759242B06320012F285 /* 冰裂.m4a */; };
+		2B0F025D244B991200239832 /* 湖浪抚石.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3775A242B06320012F285 /* 湖浪抚石.m4a */; };
+		2B0F025E244B991200239832 /* 牛羊.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3775B242B06320012F285 /* 牛羊.m4a */; };
+		2B0F025F244B991200239832 /* 雨夜行车.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3775C242B06320012F285 /* 雨夜行车.m4a */; };
+		2B0F0260244B991200239832 /* 吊扇.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3775D242B06320012F285 /* 吊扇.m4a */; };
+		2B0F0261244B991200239832 /* 清晨鸟雀.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3775E242B06320012F285 /* 清晨鸟雀.m4a */; };
+		2B0F0262244B991200239832 /* 卧室听风.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3775F242B06320012F285 /* 卧室听风.m4a */; };
+		2B0F0263244B991200239832 /* 细冰雹.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37760242B06320012F285 /* 细冰雹.m4a */; };
+		2B0F0264244B991200239832 /* 古庙风钟.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37761242B06320012F285 /* 古庙风钟.m4a */; };
+		2B0F0265244B991200239832 /* 露水踏叶.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37762242B06320012F285 /* 露水踏叶.m4a */; };
+		2B0F0266244B991200239832 /* 石洞.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37763242B06320012F285 /* 石洞.m4a */; };
+		2B0F0267244B991200239832 /* 石路单车.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37764242B06320012F285 /* 石路单车.m4a */; };
+		2B0F0268244B991200239832 /* 滂沱大雨.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37765242B06320012F285 /* 滂沱大雨.m4a */; };
+		2B0F0269244B991200239832 /* 键盘.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37766242B06320012F285 /* 键盘.m4a */; };
+		2B0F026A244B991200239832 /* 竹风铃.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37767242B06320012F285 /* 竹风铃.m4a */; };
+		2B0F026B244B991200239832 /* 白噪音.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37768242B06320012F285 /* 白噪音.m4a */; };
+		2B0F026C244B991200239832 /* 细雨.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE37769242B06320012F285 /* 细雨.m4a */; };
+		2B0F026D244C488C00239832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B7D726A2425BC060098BAD5 /* Assets.xcassets */; };
+		2B0F026F244C4A6100239832 /* SoundCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0F026E244C4A6100239832 /* SoundCardView.swift */; };
 		2B3CFC08244095690038E642 /* SubSoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3CFC07244095690038E642 /* SubSoundsView.swift */; };
 		2B3CFC0A2440969B0038E642 /* MainSoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3CFC092440969B0038E642 /* MainSoundView.swift */; };
 		2B3CFC0C2440A3200038E642 /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3CFC0B2440A3200038E642 /* BottomBarView.swift */; };
@@ -27,17 +113,16 @@
 		2B88F046244083DA00452A83 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B88F03C244083DA00452A83 /* HomeView.swift */; };
 		2B88F048244083DA00452A83 /* PlayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B88F03E244083DA00452A83 /* PlayListView.swift */; };
 		2B88F049244083DA00452A83 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B88F03F244083DA00452A83 /* TimerView.swift */; };
-		2B99116C242C6069007E7FEA /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99116B242C6069007E7FEA /* UserData.swift */; };
 		2B991170242C8E5F007E7FEA /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B99116F242C8E5F007E7FEA /* ExternalAccessory.framework */; };
 		2BB3360B2448CB67005B5300 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3360A2448CB67005B5300 /* TimerViewModel.swift */; };
 		2BB3360E2449AD6E005B5300 /* FlipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3360D2449AD6E005B5300 /* FlipViewModel.swift */; };
 		2BB336122449AD80005B5300 /* FlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3360F2449AD80005B5300 /* FlipView.swift */; };
 		2BB336142449AD80005B5300 /* SingleFlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB336112449AD80005B5300 /* SingleFlipView.swift */; };
 		2BB336172449B0B6005B5300 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB336162449B0B6005B5300 /* ColorExtension.swift */; };
+		2BC4FECD244B8DEC0091D65C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC4FECC244B8DEC0091D65C /* HomeView.swift */; };
 		2BD3F44224445AF60007FCB1 /* SaveMixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD3F44124445AF60007FCB1 /* SaveMixView.swift */; };
 		2BD5B4B7244B71650085221E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5B4B6244B71650085221E /* AppDelegate.swift */; };
 		2BD5B4B9244B71650085221E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5B4B8244B71650085221E /* ContentView.swift */; };
-		2BD5B4BB244B71670085221E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD5B4BA244B71670085221E /* Assets.xcassets */; };
 		2BD5B4BE244B71670085221E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD5B4BD244B71670085221E /* Preview Assets.xcassets */; };
 		2BD5B4C1244B71670085221E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD5B4BF244B71670085221E /* Main.storyboard */; };
 		2BE3776A242B06320012F285 /* 游泳池.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BE3771B242B06320012F285 /* 游泳池.m4a */; };
@@ -123,6 +208,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B0F026E244C4A6100239832 /* SoundCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCardView.swift; sourceTree = "<group>"; };
 		2B3CFC07244095690038E642 /* SubSoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubSoundsView.swift; sourceTree = "<group>"; };
 		2B3CFC092440969B0038E642 /* MainSoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSoundView.swift; sourceTree = "<group>"; };
 		2B3CFC0B2440A3200038E642 /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
@@ -152,11 +238,11 @@
 		2BB3360F2449AD80005B5300 /* FlipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipView.swift; sourceTree = "<group>"; };
 		2BB336112449AD80005B5300 /* SingleFlipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleFlipView.swift; sourceTree = "<group>"; };
 		2BB336162449B0B6005B5300 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		2BC4FECC244B8DEC0091D65C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2BD3F44124445AF60007FCB1 /* SaveMixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveMixView.swift; sourceTree = "<group>"; };
 		2BD5B4B4244B71650085221E /* CyberSpaceForMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CyberSpaceForMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD5B4B6244B71650085221E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BD5B4B8244B71650085221E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2BD5B4BA244B71670085221E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BD5B4BD244B71670085221E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2BD5B4C0244B71670085221E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BD5B4C2244B71670085221E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -287,11 +373,9 @@
 			children = (
 				2BB336072448CB34005B5300 /* ViewModel */,
 				2B991171242D03D8007E7FEA /* View */,
-				2BE377B9242B06810012F285 /* Model */,
 				2B7D72642425BC020098BAD5 /* AppDelegate.swift */,
 				2B7D72662425BC020098BAD5 /* SceneDelegate.swift */,
 				2B7D72682425BC020098BAD5 /* ContentView.swift */,
-				2B7D726A2425BC060098BAD5 /* Assets.xcassets */,
 				2B7D726F2425BC060098BAD5 /* LaunchScreen.storyboard */,
 				2B7D72722425BC060098BAD5 /* Info.plist */,
 				2B7D726C2425BC060098BAD5 /* Preview Content */,
@@ -369,12 +453,21 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		2BC4FECB244B8DC10091D65C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2BC4FECC244B8DEC0091D65C /* HomeView.swift */,
+				2B0F026E244C4A6100239832 /* SoundCardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2BD5B4B5244B71650085221E /* CyberSpaceForMac */ = {
 			isa = PBXGroup;
 			children = (
+				2BC4FECB244B8DC10091D65C /* View */,
 				2BD5B4B6244B71650085221E /* AppDelegate.swift */,
 				2BD5B4B8244B71650085221E /* ContentView.swift */,
-				2BD5B4BA244B71670085221E /* Assets.xcassets */,
 				2BD5B4BF244B71670085221E /* Main.storyboard */,
 				2BD5B4C2244B71670085221E /* Info.plist */,
 				2BD5B4C3244B71670085221E /* CyberSpaceForMac.entitlements */,
@@ -394,9 +487,10 @@
 		2BD5B4C7244B71C60085221E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2BE377B9242B06810012F285 /* Model */,
+				2BB336152449B080005B5300 /* Extensions */,
 				2BC4FECA244B8B370091D65C /* View */,
 				2BE3771A242B06320012F285 /* Resources */,
-				2BB336152449B080005B5300 /* Extensions */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -404,6 +498,7 @@
 		2BE3771A242B06320012F285 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2B7D726A2425BC060098BAD5 /* Assets.xcassets */,
 				2B88F03224407BE300452A83 /* Sounds */,
 				2BE37722242B06320012F285 /* soundIndexes.json */,
 				2BE3771B242B06320012F285 /* 游泳池.m4a */,
@@ -491,9 +586,9 @@
 		2BE377B9242B06810012F285 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2B99116B242C6069007E7FEA /* UserData.swift */,
 				2B7D72992425BEF80098BAD5 /* Player.swift */,
 				2BE377BC242B06CC0012F285 /* Data.swift */,
-				2B99116B242C6069007E7FEA /* UserData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -667,9 +762,89 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B0F026D244C488C00239832 /* Assets.xcassets in Resources */,
+				2B0F021D244B991100239832 /* Sounds in Resources */,
+				2B0F021E244B991100239832 /* soundIndexes.json in Resources */,
+				2B0F021F244B991100239832 /* 游泳池.m4a in Resources */,
+				2B0F0220244B991100239832 /* 小溪.m4a in Resources */,
+				2B0F0221244B991100239832 /* 雾林柔雨.m4a in Resources */,
+				2B0F0222244B991100239832 /* 小鸭戏水.m4a in Resources */,
+				2B0F0223244B991100239832 /* 鸬鹚.m4a in Resources */,
+				2B0F0224244B991100239832 /* 溪流雪融.m4a in Resources */,
+				2B0F0225244B991100239832 /* 春雷.m4a in Resources */,
+				2B0F0226244B991100239832 /* 割草机.m4a in Resources */,
+				2B0F0227244B991100239832 /* 船舱.m4a in Resources */,
+				2B0F0228244B991100239832 /* 踏雪.m4a in Resources */,
+				2B0F0229244B991100239832 /* 孤岛.m4a in Resources */,
+				2B0F022A244B991100239832 /* 纽约地铁口.m4a in Resources */,
+				2B0F022B244B991100239832 /* 老电视.m4a in Resources */,
+				2B0F022C244B991100239832 /* 荒野.m4a in Resources */,
+				2B0F022D244B991100239832 /* 秋日孤鸟.m4a in Resources */,
+				2B0F022E244B991100239832 /* 沐浴.m4a in Resources */,
+				2B0F022F244B991100239832 /* 夏夜.m4a in Resources */,
+				2B0F0230244B991100239832 /* 雪林.m4a in Resources */,
+				2B0F0231244B991100239832 /* 壁炉.m4a in Resources */,
+				2B0F0232244B991100239832 /* 高跟鞋.m4a in Resources */,
+				2B0F0233244B991100239832 /* 折纸.m4a in Resources */,
+				2B0F0234244B991100239832 /* 雨伞.m4a in Resources */,
+				2B0F0235244B991100239832 /* 海与鸟.m4a in Resources */,
+				2B0F0236244B991100239832 /* 冬雪压枝.m4a in Resources */,
+				2B0F0237244B991100239832 /* 仙女棒.m4a in Resources */,
+				2B0F0238244B991100239832 /* 帐篷雨.m4a in Resources */,
+				2B0F0239244B991100239832 /* 后院虫鸣.m4a in Resources */,
+				2B0F023A244B991100239832 /* 翻书.m4a in Resources */,
+				2B0F023B244B991100239832 /* 雨滴洒落.m4a in Resources */,
+				2B0F023C244B991100239832 /* 河流.m4a in Resources */,
+				2B0F023D244B991100239832 /* 波音客机.m4a in Resources */,
+				2B0F023E244B991100239832 /* 图书馆.m4a in Resources */,
+				2B0F023F244B991100239832 /* 野炊.m4a in Resources */,
+				2B0F0240244B991200239832 /* 风铃.m4a in Resources */,
+				2B0F0241244B991200239832 /* 老钟.m4a in Resources */,
+				2B0F0242244B991200239832 /* 林风.m4a in Resources */,
+				2B0F0243244B991200239832 /* 雨后.m4a in Resources */,
+				2B0F0244244B991200239832 /* 雷暴雨.m4a in Resources */,
+				2B0F0245244B991200239832 /* 刨木.m4a in Resources */,
+				2B0F0246244B991200239832 /* 碎石路.m4a in Resources */,
+				2B0F0247244B991200239832 /* 水边自然.m4a in Resources */,
+				2B0F0248244B991200239832 /* 慢敲打字机.m4a in Resources */,
+				2B0F0249244B991200239832 /* 柴火.m4a in Resources */,
+				2B0F024A244B991200239832 /* 水落屋檐.m4a in Resources */,
+				2B0F024B244B991200239832 /* 雨村清晨.m4a in Resources */,
+				2B0F024C244B991200239832 /* 冰雹雨.m4a in Resources */,
+				2B0F024D244B991200239832 /* 雨林.m4a in Resources */,
+				2B0F024E244B991200239832 /* 咖啡馆.m4a in Resources */,
+				2B0F024F244B991200239832 /* 风之原野.m4a in Resources */,
+				2B0F0250244B991200239832 /* 打字机.m4a in Resources */,
+				2B0F0251244B991200239832 /* 水滴空灵.m4a in Resources */,
+				2B0F0252244B991200239832 /* 瀑布.m4a in Resources */,
+				2B0F0253244B991200239832 /* 落尘唱片.m4a in Resources */,
+				2B0F0254244B991200239832 /* 篮球场.m4a in Resources */,
+				2B0F0255244B991200239832 /* 厨房.m4a in Resources */,
+				2B0F0256244B991200239832 /* 薄片.m4a in Resources */,
+				2B0F0257244B991200239832 /* 屋顶风雨.m4a in Resources */,
+				2B0F0258244B991200239832 /* 木风铃.m4a in Resources */,
+				2B0F0259244B991200239832 /* 粉噪.m4a in Resources */,
+				2B0F025A244B991200239832 /* 游乐场.m4a in Resources */,
+				2B0F025B244B991200239832 /* 落雨潜海.m4a in Resources */,
+				2B0F025C244B991200239832 /* 冰裂.m4a in Resources */,
+				2B0F025D244B991200239832 /* 湖浪抚石.m4a in Resources */,
+				2B0F025E244B991200239832 /* 牛羊.m4a in Resources */,
+				2B0F025F244B991200239832 /* 雨夜行车.m4a in Resources */,
+				2B0F0260244B991200239832 /* 吊扇.m4a in Resources */,
+				2B0F0261244B991200239832 /* 清晨鸟雀.m4a in Resources */,
+				2B0F0262244B991200239832 /* 卧室听风.m4a in Resources */,
+				2B0F0263244B991200239832 /* 细冰雹.m4a in Resources */,
+				2B0F0264244B991200239832 /* 古庙风钟.m4a in Resources */,
+				2B0F0265244B991200239832 /* 露水踏叶.m4a in Resources */,
+				2B0F0266244B991200239832 /* 石洞.m4a in Resources */,
+				2B0F0267244B991200239832 /* 石路单车.m4a in Resources */,
+				2B0F0268244B991200239832 /* 滂沱大雨.m4a in Resources */,
+				2B0F0269244B991200239832 /* 键盘.m4a in Resources */,
+				2B0F026A244B991200239832 /* 竹风铃.m4a in Resources */,
+				2B0F026B244B991200239832 /* 白噪音.m4a in Resources */,
+				2B0F026C244B991200239832 /* 细雨.m4a in Resources */,
 				2BD5B4C1244B71670085221E /* Main.storyboard in Resources */,
 				2BD5B4BE244B71670085221E /* Preview Assets.xcassets in Resources */,
-				2BD5B4BB244B71670085221E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,10 +870,10 @@
 				2B88F044244083DA00452A83 /* GridView.swift in Sources */,
 				2B3CFC08244095690038E642 /* SubSoundsView.swift in Sources */,
 				2B88F049244083DA00452A83 /* TimerView.swift in Sources */,
-				2B99116C242C6069007E7FEA /* UserData.swift in Sources */,
 				2B3CFC0A2440969B0038E642 /* MainSoundView.swift in Sources */,
 				2B88F040244083DA00452A83 /* SubSoundCardView.swift in Sources */,
 				2B88F045244083DA00452A83 /* SoundLibraryView.swift in Sources */,
+				2B0F01C8244B910900239832 /* UserData.swift in Sources */,
 				2BE377BD242B06CC0012F285 /* Data.swift in Sources */,
 				2B7D72652425BC020098BAD5 /* AppDelegate.swift in Sources */,
 				2B7D72672425BC020098BAD5 /* SceneDelegate.swift in Sources */,
@@ -711,8 +886,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B0F01CC244B925500239832 /* GridView.swift in Sources */,
+				2B0F01CB244B925000239832 /* Data.swift in Sources */,
+				2B0F01C9244B923300239832 /* UserData.swift in Sources */,
+				2BC4FECD244B8DEC0091D65C /* HomeView.swift in Sources */,
 				2BD5B4B9244B71650085221E /* ContentView.swift in Sources */,
 				2BD5B4B7244B71650085221E /* AppDelegate.swift in Sources */,
+				2B0F026F244C4A6100239832 /* SoundCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

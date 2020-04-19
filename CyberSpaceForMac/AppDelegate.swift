@@ -18,8 +18,22 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let popover = NSPopover()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        if UserDefaults.standard.bool(forKey: UserDataKey.everLaunch) {
+            UserDefaults.standard.set(false, forKey: UserDataKey.isFirstLaunch)
+        } else {//first Launch
+            UserDefaults.standard.set(true, forKey: UserDataKey.everLaunch)
+            UserDefaults.standard.set(true, forKey: UserDataKey.isFirstLaunch)
+        }
+
         // Create the SwiftUI view that provides the window contents.
+        let userData =  UserData()
+        print(userData.subSounds)
+//        let player = Player()
+        
+        //        updateJSON()
         let contentView = ContentView()
+            .environmentObject(userData)
+//            .environmentObject(player)
 
         // Create the window and set the content view. 
 //        window = NSWindow(
@@ -32,8 +46,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 //        window.makeKeyAndOrderFront(nil)
         
         popover.behavior = .transient
-        popover.contentViewController = ContentViewController(rootView: contentView)
-//        popover.contentViewController?.preferredContentSize = NSSize(width: 70, height: 100)
+        popover.contentViewController =  NSHostingController(rootView: AnyView(contentView))
+
+        popover.contentViewController?.preferredContentSize = NSSize(width: 270, height: 600)
         statusBarItem.button?.title = "Cyber Space"
         statusBarItem.button?.action = #selector(togglePopover(sender:))
     }

@@ -75,5 +75,6 @@ struct GridView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
         .environmentObject(UserData())
-        .environmentObject(Player())    }
+//        .environmentObject(Player())
+    }
 }

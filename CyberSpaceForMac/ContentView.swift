@@ -10,14 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                Text(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/)
-            }
-
-            Text("Hello, World!")
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-        }
+        HomeView()
     }
 }
 
@@ -26,7 +19,4 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
-}
-
-class ContentViewController: NSHostingController<ContentView> {
 }
