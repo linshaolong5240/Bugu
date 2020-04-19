@@ -15,12 +15,14 @@ struct HomeView: View {
         VStack {
             HStack {
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                    Text("Play")
+                    Image("PlayIcon")
                 }
+                .buttonStyle(PlainButtonStyle())
                 Spacer()
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                Text("timer")
+                    Image("TimerIcon").colorInvert()
                 }
+                .buttonStyle(PlainButtonStyle())
             }
             GridView(data: userData.subSounds.filter{$0.isFavorite == true}, columns: 3) {
                 audioInfo in

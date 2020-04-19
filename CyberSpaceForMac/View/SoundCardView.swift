@@ -11,7 +11,7 @@ import SwiftUI
 struct SoundCardView: View {
 //    @EnvironmentObject var userData: UserData
 //    @EnvironmentObject var player: Player
-    var frameHeight: CGFloat = 120
+    var frameHeight: CGFloat = 100
     let audioInfo: AudioInfo
     
     init(_ audioInfo: AudioInfo) {
