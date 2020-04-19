@@ -10,7 +10,7 @@ import SwiftUI
 
 struct SoundCardView: View {
 //    @EnvironmentObject var userData: UserData
-//    @EnvironmentObject var player: Player
+    @EnvironmentObject var player: Player
     let audioInfo: AudioInfo
     
     init(_ audioInfo: AudioInfo) {
@@ -18,7 +18,7 @@ struct SoundCardView: View {
     }
     
     var body: some View {
-        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+        Button(action: {self.togglePlay()}) {
             VStack {
                 Image(audioInfo.name)
                 Text(audioInfo.name)
@@ -26,6 +26,21 @@ struct SoundCardView: View {
             .frame(width: 90, height: 100)
         }
         .buttonStyle(PlainButtonStyle())
+    }
+    
+    func togglePlay() {
+        if player.isPlaying {
+            if player.subChannels[audioInfo.id] != nil {
+                player.removeSubChannel(audioInfo)
+            }else {
+                player.addSubChannel(audioInfo)
+            }
+        }else {
+            if player.mainChannels.count != 0 || player.subChannels.count != 0 {
+                player.removeAllChannel()
+            }
+            player.addSubChannel(audioInfo)
+        }
     }
 }
 
