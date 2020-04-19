@@ -76,7 +76,11 @@ final class UserData: ObservableObject  {
         if UserDefaults.standard.bool(forKey: UserDataKey.isFirstLaunch) {
             var data: Data
             //sub sound
-            data = loadFileToData("soundIndexes.json")
+            #if os(macOS)
+            data = loadFileToData("SoundIndexesForMac.json")
+            #else
+            data = loadFileToData("SoundIndexesForIOS.json")
+            #endif
             UserDefaults.standard.set(data, forKey: UserDataKey.subSound)
             //main sound
             mainSounds = getSoundMetaDatas()
