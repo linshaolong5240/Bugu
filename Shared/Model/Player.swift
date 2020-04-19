@@ -84,7 +84,10 @@ class Player: ObservableObject {
     var subChannels = [Int:AudioPlayer]()
     @Published var isPlaying: Bool = false
     @Published var currentPlaying: String = ""
+    #if os(macOS)
+    #else
     lazy var timerViewModel: TimerViewModel = TimerViewModel()
+    #endif
     
     private var interruptionObserver: NSObjectProtocol!
     private var shouldResume = false
@@ -101,8 +104,11 @@ class Player: ObservableObject {
         }
     }
     init() {
+        #if os(macOS)
+        #else
         handleNowPlayableSessionStart()
         createRemoteControll()
+        #endif
     }
     func playMixSound(_ mixSound: MixSound) {
         removeAllChannel()
@@ -184,7 +190,10 @@ class Player: ObservableObject {
     func updateState() {
         updateCurrentPlaying()
         updateIsPlaying()
+        #if os(macOS)
+        #else
         updateMPNowPlayingInfo()//end
+        #endif
     }
     func updateCurrentPlaying(){
         currentPlaying = ""
@@ -242,7 +251,8 @@ extension Player {
 //        updateState()
 //    }
 }
-
+#if os(macOS)
+#else
 extension Player {
     private func updateMPNowPlayingInfo() {
         var info = [String : Any]()
@@ -368,4 +378,5 @@ extension Player {
             break
         }
     }
-}
+}#endif
+
