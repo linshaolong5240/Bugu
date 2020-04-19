@@ -15,6 +15,7 @@ where Data : RandomAccessCollection, Content : View, Data.Element : Identifiable
       data.count / self.columns
     }
     private var HSpacing: CGFloat
+    private var VSpacing: CGFloat
 
     private let data: [Data.Element]
     private let content: (Data.Element) -> Content
@@ -22,16 +23,18 @@ where Data : RandomAccessCollection, Content : View, Data.Element : Identifiable
     public init(data: Data,
                 columns: Int,
                 hSpacing: CGFloat = 0,
+                vSpacing: CGFloat = 0,
                 content: @escaping (Data.Element) -> Content) {
         self.data = data.map{$0}
         self.content = content
         self.columns = max(1, columns)
         self.HSpacing = hSpacing
+        self.VSpacing = vSpacing
     }
     var body: some View {
         GeometryReader { geometry in
             ScrollView(showsIndicators: false) {
-                VStack {
+                VStack(spacing: self.VSpacing) {
                     ForEach((0..<self.rows).map {GridIndex(id: $0)}){row in
                         HStack(spacing: self.HSpacing) {
                             ForEach((0..<self.columns).map {GridIndex(id: $0)}) {

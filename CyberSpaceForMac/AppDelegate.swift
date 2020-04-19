@@ -48,7 +48,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         popover.behavior = .transient
         popover.contentViewController =  NSHostingController(rootView: AnyView(contentView))
 
-        popover.contentViewController?.preferredContentSize = NSSize(width: 270, height: 600)
+        popover.contentViewController?.preferredContentSize = NSSize(width: 272, height: 600)
         statusBarItem.button?.title = "Cyber Space"
         statusBarItem.button?.action = #selector(togglePopover(sender:))
     }

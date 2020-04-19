@@ -12,27 +12,40 @@ struct HomeView: View {
     @EnvironmentObject var userData: UserData
     
     var body: some View {
-        VStack {
-            HStack {
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                    Image("PlayIcon")
-                }
-                .buttonStyle(PlainButtonStyle())
-                Spacer()
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                    Image("TimerIcon").colorInvert()
-                }
-                .buttonStyle(PlainButtonStyle())
+        VStack(spacing: 0.0) {
+            //必须有个正常style的button popover 的 transient 行为才会正常
+            Button(action: {}) {
+                Text("")
             }
-            GridView(data: userData.subSounds.filter{$0.isFavorite == true}, columns: 3) {
+            .frame(width: 272, height: 0)
+            
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                HStack {
+                    Image("PlayIcon")
+                    Text("Play")
+                        .font(.headline)
+                    Spacer()
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                        Image("TimerIcon")
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                }
+            }
+            .buttonStyle(PlainButtonStyle())
+            .padding()
+            .background(Color.blue)
+            
+            GridView(data: userData.subSounds.filter{$0.isFavorite == true}, columns: 3, hSpacing: 1, vSpacing:  1) {
                 audioInfo in
                 SoundCardView(audioInfo)
                 .background(Color.gray)
+//                .border(Color.white, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
 //                    .padding(.horizontal, 10)
 //                    .padding(.top, 10)
             }
+            .background(Color.white)
         }
-        .frame(maxWidth: 270, maxHeight: 600)
+        .frame(width: 272, height: 600)
     }
 }
 

@@ -11,16 +11,19 @@ import SwiftUI
 struct SoundCardView: View {
 //    @EnvironmentObject var userData: UserData
 //    @EnvironmentObject var player: Player
-    var frameHeight: CGFloat = 100
     let audioInfo: AudioInfo
     
     init(_ audioInfo: AudioInfo) {
         self.audioInfo = audioInfo
     }
+    
     var body: some View {
         Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-            Image(audioInfo.name)
-            .padding()
+            VStack {
+                Image(audioInfo.name)
+                Text(audioInfo.name)
+            }
+            .frame(width: 90, height: 100)
         }
         .buttonStyle(PlainButtonStyle())
     }
