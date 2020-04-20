@@ -13,7 +13,7 @@ struct ControllBarView: View {
     @EnvironmentObject var player: Player
     
     var body: some View {
-        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+        Button(action: {self.tooglePlay()}) {
             HStack {
                 Circle()
                     .frame(width: 25, height: 25)
@@ -31,6 +31,9 @@ struct ControllBarView: View {
         .buttonStyle(PlainButtonStyle())
         .padding()
         .background(player.isPlaying ? Color("SoundCarActiveColor") : Color("ControllBarBackGroundColor"))
+    }
+    func tooglePlay() {
+        player.toogleAllChannel()
     }
 }
 
