@@ -87,7 +87,11 @@ class Player: ObservableObject {
     private var interruptionObserver: NSObjectProtocol!
     private var shouldResume = false
     #if os(macOS)
-    @Published var mixMode: Bool = false
+    var mixMode: Bool = false {
+        didSet {
+            removeAllChannel()
+        }
+    }
     #else
     lazy var timerViewModel: TimerViewModel = TimerViewModel()
     #endif
