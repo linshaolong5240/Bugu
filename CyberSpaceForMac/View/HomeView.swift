@@ -24,6 +24,7 @@ struct HomeView: View {
             .frame(width: 272, height: 0)
             
             ControllBarView(showTimer: $showTimer)
+            Divider()
             if showTimer {
                 TimerView(player.timerViewModel)
             }

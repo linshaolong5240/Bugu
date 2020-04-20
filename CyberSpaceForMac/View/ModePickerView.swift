@@ -19,6 +19,7 @@ struct ModePickerView: View {
         }
         .padding([.top, .bottom, .trailing], 7)
         .pickerStyle(SegmentedPickerStyle())
+        .background(Color("ControllBarBackGroundColor"))
     }
 }
 
