@@ -21,7 +21,9 @@ struct HomeView: View {
             
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                 HStack {
-                    Image("PlayIcon")
+                    Circle()
+                        .frame(width: 25, height: 25)
+                        .overlay(Image("PlayIcon"))
                     Text("Play")
                         .font(.headline)
                     Spacer()
