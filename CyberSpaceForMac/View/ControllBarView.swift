@@ -32,7 +32,7 @@ struct ControllBarView: View {
         }
         .buttonStyle(PlainButtonStyle())
         .padding()
-        .background(player.isPlaying ? Color("SoundCarActiveColor") : Color("ControllBarBackGroundColor"))
+        .background(player.isPlaying ? Color("ActiveColor") : Color("ControllBarBackGroundColor"))
     }
     func tooglePlay() {
         player.toogleAllChannel()
