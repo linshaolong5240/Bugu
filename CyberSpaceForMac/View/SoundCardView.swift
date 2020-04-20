@@ -48,6 +48,6 @@ struct SoundCardView: View {
 struct SoundCardView_Previews: PreviewProvider {
     static var previews: some View {
         SoundCardView(UserData().subSounds[0])
-//        .environmentObject(UserData())
+        .environmentObject(Player())
     }
 }
