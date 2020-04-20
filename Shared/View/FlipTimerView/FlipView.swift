@@ -46,3 +46,8 @@ struct FlipView: View {
         .fixedSize()
     }
 }
+struct FlipView_Previews: PreviewProvider {
+    static var previews: some View {
+        FlipView(FlipViewModel(old: "3", new: "3"))
+    }
+}

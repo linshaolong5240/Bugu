@@ -28,9 +28,15 @@ struct TimerView: View {
                     self.viewModel.setTimer(hours: TimeInterval(self.hours), minutes: TimeInterval(self.minutes), action: {self.player.stopAllChannel()})
                 }
             }) {
-                Text(viewModel.timerFlag ? "Pause" : "Start")
+                HStack {
+                    Spacer()
+                    Text(viewModel.timerFlag ? "Pause" : "Start")
+                        .padding()
+                    Spacer()
+                }
+                .background(viewModel.timerFlag ? Color("DangerColor") : Color("ActiveColor"))
             }
-
+            .buttonStyle(PlainButtonStyle())
             if viewModel.timerFlag {
                 HStack {
                     FlipView(viewModel.filpViewModels[0])
@@ -42,18 +48,20 @@ struct TimerView: View {
                     FlipView(viewModel.filpViewModels[4])
                     FlipView(viewModel.filpViewModels[5])
                 }
-                .padding(.horizontal)
             }else {
                 VStack {
-                    Picker(selection: $hours, label: Text("")) {
-                        Text("0").tag(0)
-                        Text("1").tag(1)
-                        Text("2").tag(2)
-                        Text("3").tag(3)
-                        Text("4").tag(4)
+                    Picker(selection: $hours,
+                           label: Text("hours").frame(width: 50)) {
+                        Text("00").tag(0)
+                        Text("01").tag(1)
+                        Text("02").tag(2)
+                        Text("03").tag(3)
+                        Text("04").tag(4)
                     }
                     .pickerStyle(SegmentedPickerStyle())
-                    Picker(selection: $minutes, label: Text("")) {
+                    .frame(width: 200)
+                    Picker(selection: $minutes,
+                           label: Text("minutes").frame(width: 50)) {
                         Text("15").tag(15)
                         Text("20").tag(20)
                         Text("25").tag(25)
@@ -61,10 +69,10 @@ struct TimerView: View {
                         Text("45").tag(45)
                     }
                     .pickerStyle(SegmentedPickerStyle())
+                    .frame(width: 200)
                 }
             }
         }
-        .frame(width: 272)
     }
 }
 

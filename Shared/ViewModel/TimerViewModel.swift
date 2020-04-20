@@ -11,7 +11,12 @@ import Combine
 import Foundation
 
 class TimerViewModel: ObservableObject {
-    lazy var filpViewModels: [FlipViewModel] = (0...5).map({_ in FlipViewModel(fontSize: 40, cornerRadius: 4)})
+    #if os(macOS)
+    private let fontSize: CGFloat = 38
+    #else
+    private let fontSize: CGFloat = 40
+    #endif
+    lazy var filpViewModels: [FlipViewModel] = (0...5).map({_ in FlipViewModel(fontSize: fontSize, cornerRadius: 4)})
 
     @Published var timerHours: TimeInterval = 0
     @Published var timerMinutes: TimeInterval = 0
@@ -33,7 +38,7 @@ class TimerViewModel: ObservableObject {
         cancellAble = Timer.publish(every: 1, on: .main, in: .default).autoconnect().sink(receiveValue: {[weak self] (_) in
             self?.update()
         })
-        self.filpViewModels = (0...5).map({_ in FlipViewModel(fontSize: 40, cornerRadius: 4)})
+        self.filpViewModels = (0...5).map({_ in FlipViewModel(fontSize: fontSize, cornerRadius: 4)})
     }
     
     func stopTimer() {
