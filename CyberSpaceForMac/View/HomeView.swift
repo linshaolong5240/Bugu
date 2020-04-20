@@ -23,6 +23,7 @@ struct HomeView: View {
                 HStack {
                     Circle()
                         .frame(width: 25, height: 25)
+                        .foregroundColor(Color.gray)
                         .overlay(Image("PlayIcon"))
                     Text("Play")
                         .font(.headline)
@@ -35,17 +36,17 @@ struct HomeView: View {
             }
             .buttonStyle(PlainButtonStyle())
             .padding()
-            .background(Color.blue)
+            .background(Color("ControllBarBackGroundColor"))
             
             GridView(data: userData.subSounds.filter{$0.isFavorite == true}, columns: 3, hSpacing: 1, vSpacing:  1) {
                 audioInfo in
                 SoundCardView(audioInfo)
-                .background(Color.gray)
+                    .background(Color("SoundCardBackGroundColor"))
 //                .border(Color.white, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
 //                    .padding(.horizontal, 10)
 //                    .padding(.top, 10)
             }
-            .background(Color.white)
+            .background(Color.primary.colorInvert())
         }
         .frame(width: 272, height: 600)
     }
