@@ -12,6 +12,8 @@ struct ControllBarView: View {
     //    @EnvironmentObject var userData: UserData
     @EnvironmentObject var player: Player
     
+    @Binding var showTimer: Bool
+    
     var body: some View {
         Button(action: {self.tooglePlay()}) {
             HStack {
@@ -22,7 +24,7 @@ struct ControllBarView: View {
                 Text(player.isPlaying ? "Pause" : "Play")
                     .font(.headline)
                 Spacer()
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                Button(action: {self.showTimer.toggle()}) {
                     Image("TimerIcon")
                 }
                 .buttonStyle(PlainButtonStyle())
@@ -39,7 +41,7 @@ struct ControllBarView: View {
 
 struct ControllBarView_Previews: PreviewProvider {
     static var previews: some View {
-        ControllBarView()
+        ControllBarView(showTimer: .constant(true))
         .environmentObject(Player())
     }
 }

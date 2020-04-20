@@ -10,7 +10,10 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject var userData: UserData
-    
+    @EnvironmentObject var player: Player
+
+    @State var showTimer: Bool = false
+
     var body: some View {
         ZStack {
             VStack(spacing: 0.0) {
@@ -20,7 +23,10 @@ struct HomeView: View {
                 }
                 .frame(width: 272, height: 0)
                 
-                ControllBarView()
+                ControllBarView(showTimer: $showTimer)
+                if showTimer {
+                    TimerView(player.timerViewModel)
+                }
                 ModePickerView()
                 Divider()
                 GridView(data: userData.subSounds.filter{$0.isFavorite == true},

@@ -12,13 +12,15 @@ import Foundation
 
 class TimerViewModel: ObservableObject {
     lazy var filpViewModels: [FlipViewModel] = (0...5).map({_ in FlipViewModel(fontSize: 40, cornerRadius: 4)})
+
     @Published var timerHours: TimeInterval = 0
     @Published var timerMinutes: TimeInterval = 0
     @Published var timerSeconds: TimeInterval = 0
     @Published var timerFlag = false
 
-    var cancellAble = AnyCancellable({})
+    private var cancellAble = AnyCancellable({})
     private var timerAction: () -> Void = {}
+    
     func setTimer(hours: TimeInterval, minutes: TimeInterval, action: @escaping () -> Void) {
         guard hours > 0 || minutes > 0 else {
             return

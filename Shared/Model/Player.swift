@@ -86,6 +86,7 @@ class Player: ObservableObject {
     @Published var currentPlaying: String = ""
     private var interruptionObserver: NSObjectProtocol!
     private var shouldResume = false
+    lazy var timerViewModel: TimerViewModel = TimerViewModel()
     #if os(macOS)
     var mixMode: Bool = false {
         didSet {
@@ -93,7 +94,6 @@ class Player: ObservableObject {
         }
     }
     #else
-    lazy var timerViewModel: TimerViewModel = TimerViewModel()
     #endif
 
     var currentMix: [AudioInfo]? {

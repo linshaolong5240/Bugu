@@ -118,6 +118,12 @@
 		2BB1C9EE244D923B00437DDA /* ControllBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1C9ED244D923B00437DDA /* ControllBarView.swift */; };
 		2BB1C9F0244D9A2700437DDA /* SettingBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1C9EF244D9A2700437DDA /* SettingBarView.swift */; };
 		2BB1C9F4244D9C1400437DDA /* ModePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1C9F3244D9C1400437DDA /* ModePickerView.swift */; };
+		2BB1CA15244DB13100437DDA /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3360A2448CB67005B5300 /* TimerViewModel.swift */; };
+		2BB1CA16244DB13100437DDA /* FlipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3360D2449AD6E005B5300 /* FlipViewModel.swift */; };
+		2BB1CA17244DB13100437DDA /* FlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3360F2449AD80005B5300 /* FlipView.swift */; };
+		2BB1CA18244DB13100437DDA /* SingleFlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB336112449AD80005B5300 /* SingleFlipView.swift */; };
+		2BB1CA19244DB13100437DDA /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB336162449B0B6005B5300 /* ColorExtension.swift */; };
+		2BB1CA1E244DB3F600437DDA /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1CA1D244DB3F600437DDA /* TimerView.swift */; };
 		2BB3360B2448CB67005B5300 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3360A2448CB67005B5300 /* TimerViewModel.swift */; };
 		2BB3360E2449AD6E005B5300 /* FlipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3360D2449AD6E005B5300 /* FlipViewModel.swift */; };
 		2BB336122449AD80005B5300 /* FlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3360F2449AD80005B5300 /* FlipView.swift */; };
@@ -242,6 +248,7 @@
 		2BB1C9ED244D923B00437DDA /* ControllBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllBarView.swift; sourceTree = "<group>"; };
 		2BB1C9EF244D9A2700437DDA /* SettingBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingBarView.swift; sourceTree = "<group>"; };
 		2BB1C9F3244D9C1400437DDA /* ModePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModePickerView.swift; sourceTree = "<group>"; };
+		2BB1CA1D244DB3F600437DDA /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		2BB3360A2448CB67005B5300 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		2BB3360D2449AD6E005B5300 /* FlipViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipViewModel.swift; sourceTree = "<group>"; };
 		2BB3360F2449AD80005B5300 /* FlipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipView.swift; sourceTree = "<group>"; };
@@ -380,7 +387,6 @@
 		2B7D72632425BC020098BAD5 /* CyberSpaceForIOS */ = {
 			isa = PBXGroup;
 			children = (
-				2BB336072448CB34005B5300 /* ViewModel */,
 				2B991171242D03D8007E7FEA /* View */,
 				2B7D72642425BC020098BAD5 /* AppDelegate.swift */,
 				2B7D72662425BC020098BAD5 /* SceneDelegate.swift */,
@@ -411,7 +417,7 @@
 		2B991171242D03D8007E7FEA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2BB3360C2449AC86005B5300 /* FlipTimerView */,
+				2B88F03F244083DA00452A83 /* TimerView.swift */,
 				2B88F03C244083DA00452A83 /* HomeView.swift */,
 				2B88F039244083D900452A83 /* BackgroundView.swift */,
 				2B88F038244083D900452A83 /* MainSoundCardView.swift */,
@@ -421,7 +427,6 @@
 				2B3D227A2445EC0700C6C31A /* VisualEffectView.swift */,
 				2B3CFC092440969B0038E642 /* MainSoundView.swift */,
 				2B3CFC07244095690038E642 /* SubSoundsView.swift */,
-				2B88F03F244083DA00452A83 /* TimerView.swift */,
 				2B3CFC0B2440A3200038E642 /* BottomBarView.swift */,
 				2BD3F44124445AF60007FCB1 /* SaveMixView.swift */,
 			);
@@ -457,6 +462,7 @@
 		2BC4FECA244B8B370091D65C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2BB3360C2449AC86005B5300 /* FlipTimerView */,
 				2B88F03A244083D900452A83 /* GridView.swift */,
 			);
 			path = View;
@@ -470,6 +476,7 @@
 				2BB1C9ED244D923B00437DDA /* ControllBarView.swift */,
 				2BB1C9EF244D9A2700437DDA /* SettingBarView.swift */,
 				2BB1C9F3244D9C1400437DDA /* ModePickerView.swift */,
+				2BB1CA1D244DB3F600437DDA /* TimerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -500,9 +507,10 @@
 		2BD5B4C7244B71C60085221E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2BB336072448CB34005B5300 /* ViewModel */,
+				2BC4FECA244B8B370091D65C /* View */,
 				2BE377B9242B06810012F285 /* Model */,
 				2BB336152449B080005B5300 /* Extensions */,
-				2BC4FECA244B8B370091D65C /* View */,
 				2BE3771A242B06320012F285 /* Resources */,
 			);
 			path = Shared;
@@ -900,8 +908,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BB1CA15244DB13100437DDA /* TimerViewModel.swift in Sources */,
+				2BB1CA16244DB13100437DDA /* FlipViewModel.swift in Sources */,
+				2BB1CA17244DB13100437DDA /* FlipView.swift in Sources */,
+				2BB1CA18244DB13100437DDA /* SingleFlipView.swift in Sources */,
+				2BB1CA19244DB13100437DDA /* ColorExtension.swift in Sources */,
 				2BB1C9EA244CC91800437DDA /* Player.swift in Sources */,
 				2BB1C9F0244D9A2700437DDA /* SettingBarView.swift in Sources */,
+				2BB1CA1E244DB3F600437DDA /* TimerView.swift in Sources */,
 				2BB1C9EE244D923B00437DDA /* ControllBarView.swift in Sources */,
 				2B0F01CC244B925500239832 /* GridView.swift in Sources */,
 				2BB1C9F4244D9C1400437DDA /* ModePickerView.swift in Sources */,
