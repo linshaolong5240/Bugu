@@ -23,7 +23,7 @@ struct SoundCardView: View {
                 Image(audioInfo.name)
                 Text(audioInfo.name)
             }
-            .frame(width: 90, height: 100)
+            .frame(width: 90, height: 90)
             .background(player.subChannels[audioInfo.id]?.isPlaying ?? false ? Color("SoundCarActiveColor") : Color("SoundCardBackGroundColor"))
         }
         .buttonStyle(PlainButtonStyle())
