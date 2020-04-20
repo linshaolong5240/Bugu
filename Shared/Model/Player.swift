@@ -84,13 +84,13 @@ class Player: ObservableObject {
     var subChannels = [Int:AudioPlayer]()
     @Published var isPlaying: Bool = false
     @Published var currentPlaying: String = ""
+    private var interruptionObserver: NSObjectProtocol!
+    private var shouldResume = false
     #if os(macOS)
+    @Published var mixMode: Bool = false
     #else
     lazy var timerViewModel: TimerViewModel = TimerViewModel()
     #endif
-    
-    private var interruptionObserver: NSObjectProtocol!
-    private var shouldResume = false
 
     var currentMix: [AudioInfo]? {
         var  list = [AudioInfo]()
@@ -379,4 +379,3 @@ extension Player {
         }
     }
 }#endif
-
