@@ -124,6 +124,7 @@
 		2BB1CA18244DB13100437DDA /* SingleFlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB336112449AD80005B5300 /* SingleFlipView.swift */; };
 		2BB1CA19244DB13100437DDA /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB336162449B0B6005B5300 /* ColorExtension.swift */; };
 		2BB1CA1E244DB3F600437DDA /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1CA1D244DB3F600437DDA /* TimerView.swift */; };
+		2BB1CA20244DE13700437DDA /* SoundLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1CA1F244DE13700437DDA /* SoundLibraryView.swift */; };
 		2BB3360B2448CB67005B5300 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3360A2448CB67005B5300 /* TimerViewModel.swift */; };
 		2BB3360E2449AD6E005B5300 /* FlipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3360D2449AD6E005B5300 /* FlipViewModel.swift */; };
 		2BB336122449AD80005B5300 /* FlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3360F2449AD80005B5300 /* FlipView.swift */; };
@@ -249,6 +250,7 @@
 		2BB1C9EF244D9A2700437DDA /* SettingBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingBarView.swift; sourceTree = "<group>"; };
 		2BB1C9F3244D9C1400437DDA /* ModePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModePickerView.swift; sourceTree = "<group>"; };
 		2BB1CA1D244DB3F600437DDA /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		2BB1CA1F244DE13700437DDA /* SoundLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLibraryView.swift; sourceTree = "<group>"; };
 		2BB3360A2448CB67005B5300 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		2BB3360D2449AD6E005B5300 /* FlipViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipViewModel.swift; sourceTree = "<group>"; };
 		2BB3360F2449AD80005B5300 /* FlipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipView.swift; sourceTree = "<group>"; };
@@ -474,9 +476,10 @@
 				2BC4FECC244B8DEC0091D65C /* HomeView.swift */,
 				2B0F026E244C4A6100239832 /* SoundCardView.swift */,
 				2BB1C9ED244D923B00437DDA /* ControllBarView.swift */,
-				2BB1C9EF244D9A2700437DDA /* SettingBarView.swift */,
 				2BB1C9F3244D9C1400437DDA /* ModePickerView.swift */,
 				2BB1CA1D244DB3F600437DDA /* TimerView.swift */,
+				2BB1C9EF244D9A2700437DDA /* SettingBarView.swift */,
+				2BB1CA1F244DE13700437DDA /* SoundLibraryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -914,6 +917,7 @@
 				2BB1CA18244DB13100437DDA /* SingleFlipView.swift in Sources */,
 				2BB1CA19244DB13100437DDA /* ColorExtension.swift in Sources */,
 				2BB1C9EA244CC91800437DDA /* Player.swift in Sources */,
+				2BB1CA20244DE13700437DDA /* SoundLibraryView.swift in Sources */,
 				2BB1C9F0244D9A2700437DDA /* SettingBarView.swift in Sources */,
 				2BB1CA1E244DB3F600437DDA /* TimerView.swift in Sources */,
 				2BB1C9EE244D923B00437DDA /* ControllBarView.swift in Sources */,

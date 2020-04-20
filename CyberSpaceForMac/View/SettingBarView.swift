@@ -9,21 +9,21 @@
 import SwiftUI
 
 struct SettingBarView: View {
+    @Binding var showLibrary: Bool
+
     var body: some View {
-        VStack(spacing: 0.0) {
+        HStack{
+            Button(action: {self.showLibrary.toggle()}) {
+            Text("Manage Sound")
+            }
             Spacer()
-            Divider()
-            HStack{
-                Spacer()
-                Text("setting")
-            }.padding()
-                .background(Color("ControllBarBackGroundColor"))
         }
+        .background(Color("ControllBarBackGroundColor"))
     }
 }
 
 struct SettingBarView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingBarView()
+        SettingBarView(showLibrary: .constant(false))
     }
 }

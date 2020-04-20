@@ -13,33 +13,36 @@ struct HomeView: View {
     @EnvironmentObject var player: Player
 
     @State var showTimer: Bool = false
+    @State var showLibrary: Bool = false
 
     var body: some View {
-        ZStack {
-            VStack(spacing: 0.0) {
-                //必须有个正常style的button popover 的 transient 行为才会正常
-                Button(action: {}) {
-                    Text("")
-                }
-                .frame(width: 272, height: 0)
-                
-                ControllBarView(showTimer: $showTimer)
-                if showTimer {
-                    TimerView(player.timerViewModel)
-                }
-                ModePickerView()
-                Divider()
+        VStack(spacing: 0.0) {
+            //必须有个正常style的button popover 的 transient 行为才会正常
+            Button(action: {}) {
+                Text("")
+            }
+            .frame(width: 272, height: 0)
+            
+            ControllBarView(showTimer: $showTimer)
+            if showTimer {
+                TimerView(player.timerViewModel)
+            }
+            ModePickerView()
+            Divider()
+            if showLibrary {
+                SoundLibraryView()
+            }else {
                 GridView(data: userData.subSounds.filter{$0.isFavorite == true},
                          columns: 3,
                          showsIndicators: true,
                          hSpacing: 1,
                          vSpacing:  1) {
-                    audioInfo in
-                    SoundCardView(audioInfo)
+                            audioInfo in
+                            SoundCardView(audioInfo)
                 }
                 .background(Color.primary.colorInvert())
             }
-            SettingBarView()
+            SettingBarView(showLibrary: $showLibrary)
         }
         .frame(width: 272, height: 600)
     }
