@@ -115,6 +115,7 @@
 		2B88F049244083DA00452A83 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B88F03F244083DA00452A83 /* TimerView.swift */; };
 		2B991170242C8E5F007E7FEA /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B99116F242C8E5F007E7FEA /* ExternalAccessory.framework */; };
 		2BB1C9EA244CC91800437DDA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D72992425BEF80098BAD5 /* Player.swift */; };
+		2BB1C9EE244D923B00437DDA /* ControllBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1C9ED244D923B00437DDA /* ControllBarView.swift */; };
 		2BB3360B2448CB67005B5300 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3360A2448CB67005B5300 /* TimerViewModel.swift */; };
 		2BB3360E2449AD6E005B5300 /* FlipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3360D2449AD6E005B5300 /* FlipViewModel.swift */; };
 		2BB336122449AD80005B5300 /* FlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3360F2449AD80005B5300 /* FlipView.swift */; };
@@ -236,6 +237,7 @@
 		2B99116B242C6069007E7FEA /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		2B99116F242C8E5F007E7FEA /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		2BB1C9EC244CDBE700437DDA /* CyberSpaceForMacRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CyberSpaceForMacRelease.entitlements; sourceTree = "<group>"; };
+		2BB1C9ED244D923B00437DDA /* ControllBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllBarView.swift; sourceTree = "<group>"; };
 		2BB3360A2448CB67005B5300 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		2BB3360D2449AD6E005B5300 /* FlipViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipViewModel.swift; sourceTree = "<group>"; };
 		2BB3360F2449AD80005B5300 /* FlipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipView.swift; sourceTree = "<group>"; };
@@ -461,6 +463,7 @@
 			children = (
 				2BC4FECC244B8DEC0091D65C /* HomeView.swift */,
 				2B0F026E244C4A6100239832 /* SoundCardView.swift */,
+				2BB1C9ED244D923B00437DDA /* ControllBarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -892,6 +895,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BB1C9EA244CC91800437DDA /* Player.swift in Sources */,
+				2BB1C9EE244D923B00437DDA /* ControllBarView.swift in Sources */,
 				2B0F01CC244B925500239832 /* GridView.swift in Sources */,
 				2B0F01CB244B925000239832 /* Data.swift in Sources */,
 				2B0F01C9244B923300239832 /* UserData.swift in Sources */,

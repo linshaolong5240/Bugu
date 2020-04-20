@@ -19,24 +19,8 @@ struct HomeView: View {
             }
             .frame(width: 272, height: 0)
             
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                HStack {
-                    Circle()
-                        .frame(width: 25, height: 25)
-                        .foregroundColor(Color.gray)
-                        .overlay(Image("PlayIcon"))
-                    Text("Play")
-                        .font(.headline)
-                    Spacer()
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                        Image("TimerIcon")
-                    }
-                    .buttonStyle(PlainButtonStyle())
-                }
-            }
-            .buttonStyle(PlainButtonStyle())
-            .padding()
-            .background(Color("ControllBarBackGroundColor"))
+            ControllBarView()
+            
             Picker("", selection: /*@START_MENU_TOKEN@*/.constant(1)/*@END_MENU_TOKEN@*/) {
                 Text("Alone").tag(1)
                 Text("Mix").tag(2)
