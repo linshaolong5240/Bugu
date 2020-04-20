@@ -93,19 +93,19 @@
     "id" : 15,
     "volume" : 1,
     "name" : "石洞",
-    "isFavorite" : false
+    "isFavorite" : true
   },
   {
     "id" : 16,
     "volume" : 1,
     "name" : "雾林柔雨",
-    "isFavorite" : false
+    "isFavorite" : true
   },
   {
     "id" : 17,
     "volume" : 1,
     "name" : "小溪",
-    "isFavorite" : false
+    "isFavorite" : true
   },
   {
     "id" : 18,

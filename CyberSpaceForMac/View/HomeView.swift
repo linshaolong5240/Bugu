@@ -23,7 +23,11 @@ struct HomeView: View {
                 ControllBarView()
                 ModePickerView()
                 Divider()
-                GridView(data: userData.subSounds.filter{$0.isFavorite == true}, columns: 3, hSpacing: 1, vSpacing:  1) {
+                GridView(data: userData.subSounds.filter{$0.isFavorite == true},
+                         columns: 3,
+                         showsIndicators: true,
+                         hSpacing: 1,
+                         vSpacing:  1) {
                     audioInfo in
                     SoundCardView(audioInfo)
                 }
