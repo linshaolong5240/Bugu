@@ -30,17 +30,33 @@ struct SoundCardView: View {
     }
     
     func togglePlay() {
-        if player.isPlaying {
-            if player.subChannels[audioInfo.id] != nil {
-                player.removeSubChannel(audioInfo)
+        if player.mixMode {
+            if player.isPlaying {
+                if player.subChannels[audioInfo.id] != nil {
+                    player.removeSubChannel(audioInfo)
+                }else {
+                    player.addSubChannel(audioInfo)
+                }
             }else {
+                if player.mainChannels.count != 0 || player.subChannels.count != 0 {
+                    player.removeAllChannel()
+                }
                 player.addSubChannel(audioInfo)
             }
         }else {
-            if player.mainChannels.count != 0 || player.subChannels.count != 0 {
-                player.removeAllChannel()
+            if player.isPlaying {
+                if player.subChannels[audioInfo.id] != nil {
+                    player.removeSubChannel(audioInfo)
+                }else {
+                    player.removeAllChannel()
+                    player.addSubChannel(audioInfo)
+                }
+            }else {
+                if player.mainChannels.count != 0 || player.subChannels.count != 0 {
+                    player.removeAllChannel()
+                }
+                player.addSubChannel(audioInfo)
             }
-            player.addSubChannel(audioInfo)
         }
     }
 }
