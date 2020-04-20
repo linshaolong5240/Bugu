@@ -51,7 +51,7 @@ struct TimerView: View {
             }else {
                 VStack {
                     Picker(selection: $hours,
-                           label: Text("hours").frame(width: 50)) {
+                           label: Text("hours").frame(width: 50, alignment: .leading)) {
                         Text("00").tag(0)
                         Text("01").tag(1)
                         Text("02").tag(2)
@@ -61,7 +61,7 @@ struct TimerView: View {
                     .pickerStyle(SegmentedPickerStyle())
                     .frame(width: 200)
                     Picker(selection: $minutes,
-                           label: Text("minutes").frame(width: 50)) {
+                           label: Text("minutes").frame(width: 50, alignment: .leading)) {
                         Text("15").tag(15)
                         Text("20").tag(20)
                         Text("25").tag(25)
@@ -71,6 +71,7 @@ struct TimerView: View {
                     .pickerStyle(SegmentedPickerStyle())
                     .frame(width: 200)
                 }
+                .padding(.vertical)
             }
         }
     }

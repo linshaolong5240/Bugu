@@ -42,6 +42,7 @@ struct HomeView: View {
                 }
                 .background(Color.primary.colorInvert())
             }
+            Divider()
             SettingBarView(showLibrary: $showLibrary)
         }
         .frame(width: 272, height: 600)
