@@ -334,7 +334,6 @@ extension Player {
             let interruptionType = AVAudioSession.InterruptionType(rawValue: interruptionTypeUInt) else { return }
         
         // Begin or end an interruption.
-        print("handle:\(interruptionType.rawValue)")
         switch interruptionType {
             
         case .began:
