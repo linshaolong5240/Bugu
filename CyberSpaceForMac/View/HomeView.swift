@@ -31,7 +31,6 @@ struct HomeView: View {
             GridView(data: userData.subSounds.filter{$0.isFavorite == true}, columns: 3, hSpacing: 1, vSpacing:  1) {
                 audioInfo in
                 SoundCardView(audioInfo)
-                    .background(Color("SoundCardBackGroundColor"))
 //                .border(Color.white, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
 //                    .padding(.horizontal, 10)
 //                    .padding(.top, 10)
