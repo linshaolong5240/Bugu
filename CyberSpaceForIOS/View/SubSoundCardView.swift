@@ -94,11 +94,10 @@ struct SubSoundCardView: View {
                         Image(systemName: player.subChannels[audioInfo.id]!.volume > 0.6 ? "speaker.3.fill" : (player.subChannels[audioInfo.id]!.volume  > 0.3 ? "speaker.2.fill" : (player.subChannels[audioInfo.id]!.volume > 0 ? "speaker.1.fill" : "speaker.fill")))
                     }else {
                         Image(audioInfo.name)
-                            .colorInvert()
                     }
                     Text(audioInfo.name)
                         .lineLimit(1)
-                        .foregroundColor(Color.black)
+                        .foregroundColor(Color.primary)
                 }
             }
             .frame(height: frameHeight)
