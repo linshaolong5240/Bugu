@@ -88,7 +88,7 @@ final class UserData: ObservableObject  {
             UserDefaults.standard.set(data, forKey: UserDataKey.mainSound)
             //playlist
             data = loadJSONToData([
-                MixSound(name: "111", soundMeta: self.mainSounds[0], audioInfos: [AudioInfo(id: 0, name: "孤岛", isFavorite: true, volume: 1),AudioInfo(id: 1, name: "雨林", isFavorite: true, volume: 1)])
+                MixSound(name: "CyberSpace", soundMeta: self.mainSounds[0], audioInfos: [AudioInfo(id: 4, name: "细雨", isFavorite: true, volume: 1)])
             ])
             UserDefaults.standard.set(data, forKey: UserDataKey.playList)
         }
