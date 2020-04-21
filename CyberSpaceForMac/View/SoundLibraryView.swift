@@ -45,6 +45,8 @@ struct SoundLibraryView_Previews: PreviewProvider {
 
 struct AudioRowView: View {
     @EnvironmentObject var userdata: UserData
+    @EnvironmentObject var player: Player
+
     var isShowFavorite: Bool
 
     var audioInfo: AudioInfo
@@ -53,6 +55,7 @@ struct AudioRowView: View {
         Button(action: {
             if !self.isShowFavorite {
                 self.userdata.subSounds[self.audioInfo.id].isFavorite.toggle()
+                self.player.subChannels.removeValue(forKey: self.audioInfo.id)
             }
         }) {
             HStack {
