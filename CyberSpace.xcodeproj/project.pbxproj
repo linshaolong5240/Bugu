@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B045512245071F400EFC14F /* README.MD in Resources */ = {isa = PBXBuildFile; fileRef = 2B045511245071F400EFC14F /* README.MD */; };
+		2B045514245071FC00EFC14F /* Picture in Resources */ = {isa = PBXBuildFile; fileRef = 2B045513245071FC00EFC14F /* Picture */; };
 		2B0F01C8244B910900239832 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99116B242C6069007E7FEA /* UserData.swift */; };
 		2B0F01C9244B923300239832 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99116B242C6069007E7FEA /* UserData.swift */; };
 		2B0F01CB244B925000239832 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE377BC242B06CC0012F285 /* Data.swift */; };
@@ -219,6 +221,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B045511245071F400EFC14F /* README.MD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
+		2B045513245071FC00EFC14F /* Picture */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Picture; sourceTree = "<group>"; };
 		2B0F026E244C4A6100239832 /* SoundCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCardView.swift; sourceTree = "<group>"; };
 		2B0F0272244C588900239832 /* SoundIndexesForMac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SoundIndexesForMac.json; sourceTree = "<group>"; };
 		2B3CFC07244095690038E642 /* SubSoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubSoundsView.swift; sourceTree = "<group>"; };
@@ -369,6 +373,8 @@
 		2B7D72582425BC020098BAD5 = {
 			isa = PBXGroup;
 			children = (
+				2B045513245071FC00EFC14F /* Picture */,
+				2B045511245071F400EFC14F /* README.MD */,
 				2BD5B4C7244B71C60085221E /* Shared */,
 				2B7D72632425BC020098BAD5 /* CyberSpaceForIOS */,
 				2BD5B4B5244B71650085221E /* CyberSpaceForMac */,
@@ -715,6 +721,7 @@
 				2BE377AD242B06320012F285 /* 清晨鸟雀.m4a in Resources */,
 				2BE37770242B06320012F285 /* 春雷.m4a in Resources */,
 				2BE377B6242B06320012F285 /* 竹风铃.m4a in Resources */,
+				2B045512245071F400EFC14F /* README.MD in Resources */,
 				2BE377A4242B06320012F285 /* 木风铃.m4a in Resources */,
 				2BE3777B242B06320012F285 /* 夏夜.m4a in Resources */,
 				2BE377A8242B06320012F285 /* 冰裂.m4a in Resources */,
@@ -727,6 +734,7 @@
 				2BE3776F242B06320012F285 /* 溪流雪融.m4a in Resources */,
 				2BE37774242B06320012F285 /* 踏雪.m4a in Resources */,
 				2BE37793242B06320012F285 /* 水边自然.m4a in Resources */,
+				2B045514245071FC00EFC14F /* Picture in Resources */,
 				2BE377B7242B06320012F285 /* 白噪音.m4a in Resources */,
 				2BE37792242B06320012F285 /* 碎石路.m4a in Resources */,
 				2BE3777E242B06320012F285 /* 高跟鞋.m4a in Resources */,
