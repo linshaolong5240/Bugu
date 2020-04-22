@@ -1,6 +1,6 @@
 //
 //  UserData.swift
-//  Cyber Space
+//  Bugu
 //
 //  Created by 林少龙 on 2020/3/26.
 //  Copyright © 2020 teeloong. All rights reserved.
@@ -88,7 +88,7 @@ final class UserData: ObservableObject  {
             UserDefaults.standard.set(data, forKey: UserDataKey.mainSound)
             //playlist
             data = loadJSONToData([
-                MixSound(name: "CyberSpace", soundMeta: self.mainSounds[0], audioInfos: [AudioInfo(id: 4, name: "细雨", isFavorite: true, volume: 1)])
+                MixSound(name: "Bugu", soundMeta: self.mainSounds[0], audioInfos: [AudioInfo(id: 4, name: "细雨", isFavorite: true, volume: 1)])
             ])
             UserDefaults.standard.set(data, forKey: UserDataKey.playList)
         }

@@ -1,6 +1,6 @@
 //
 //  Player.swift
-//  Cyber Space
+//  Bugu
 //
 //  Created by 林少龙 on 2020/3/21.
 //  Copyright © 2020 teeloong. All rights reserved.
@@ -262,7 +262,7 @@ extension Player {
         var info = [String : Any]()
         info[MPNowPlayingInfoPropertyMediaType] = MPNowPlayingInfoMediaType.audio.rawValue
         info[MPMediaItemPropertyTitle] = currentPlaying//歌名
-        info[MPMediaItemPropertyArtist] = "Cyber Space"//mainChannels.first?.value.soundMeta?.artist//作者
+        info[MPMediaItemPropertyArtist] = "Bugu"//mainChannels.first?.value.soundMeta?.artist//作者
         //         [info setObject:self.model.filename forKey:MPMediaItemPropertyAlbumTitle];//专辑名
         //         info[MPMediaItemPropertyAlbumArtist] = mainChannels.first?.value.soundMeta?.artist//专辑作者
         if let data = mainChannels.first?.value.soundMeta?.artwork {
