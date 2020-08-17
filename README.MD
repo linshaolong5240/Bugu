@@ -1,5 +1,4 @@
-#README
-#防元气FM 支持iOS macOS SwiftUI
+# 防元气FM 支持iOS macOS SwiftUI
 
 ![image](https://github.com/linshaolong5240/Bugu/blob/master/Images/IOS_1.PNG)
 ![image](https://github.com/linshaolong5240/Bugu/blob/master/Images/IOS_2.PNG)
